@@ -1,0 +1,6 @@
+@function size($px) {
+    @return calc(#{$px} / 1080 * (var(--basic-size) * 100));
+}
+@function shadow($param1, $param2, $param3, $param4) {
+    @return drop-shadow(size($param1) size($param2) size($param3) $param4);
+}
